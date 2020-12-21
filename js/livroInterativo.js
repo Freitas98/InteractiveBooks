@@ -1,5 +1,5 @@
 $("#flipbook").turn({
-    width: 450,
-    height: 450,
+    width: 800,
+    height: 800,
     autoCenter: true
 });

@@ -1,0 +1,25 @@
+.blue{
+    background-color: blue;
+}
+
+body { 
+    background: url("../../../img/fundo_livro.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.livro {
+	width: 1200px;
+	height: 800px;
+	background: url("../../../img/moldura_livro.png") no-repeat center center fixed;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
