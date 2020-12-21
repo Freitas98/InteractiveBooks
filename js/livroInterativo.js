@@ -1,5 +1,8 @@
-$("#flipbook").turn({
-    width: 800,
-    height: 800,
-    autoCenter: true
+var flipbook = $('.sj-book');
+	
+flipbook.turn({
+    elevation: 50,
+    acceleration: true,
+    autoCenter: true,
+    gradients: true
 });
