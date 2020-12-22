@@ -1,18 +1,14 @@
 html, body { 
     overflow: hidden;
-    background: url("../../../img/fundo_livro.png"); 
+    background: url("../../img/fundo_livro.png"); 
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/**{
-    border: solid 1px black;
-}*/
-
 #divMeio{
-    background: url("../../../img/moldura_livro2.png"); 
+    background: url("../../img/moldura_livro2.png"); 
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
