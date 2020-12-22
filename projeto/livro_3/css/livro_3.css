@@ -1,9 +1,7 @@
 html, body { 
     overflow: hidden;
     background: url("../../../img/fundo_livro.png"); 
-    /* Full height */
     height: 100%; 
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,9 +13,7 @@ html, body {
 
 #divMeio{
     background: url("../../../img/moldura_livro2.png"); 
-    /* Full height */
     height: 100%; 
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +21,7 @@ html, body {
 
 .reprodutor{
     background-color: #473beb;
-    border: 1px solid black;
+    border: 3px solid black;
     height: 70px;
 }
 
@@ -35,4 +31,16 @@ html, body {
 
 .pagina-livro{
     background-color: red;
+}
+
+.linhaReprodutor{
+    align-items:center;
+}
+
+.barraProgressoExterior{
+    height: 33px;
+    border-radius: 2rem !important;
+    border: 3.2px solid black;
+    padding: 0px !important;
+    margin: 0px !important;
 }
