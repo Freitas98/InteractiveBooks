@@ -1,12 +1,38 @@
-body { 
-    background: url("../../../img/fundo_livro.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
+html, body { 
+    overflow: hidden;
+    background: url("../../../img/fundo_livro.png"); 
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-*{
+/**{
     border: solid 1px black;
+}*/
+
+#divMeio{
+    background: url("../../../img/moldura_livro2.png"); 
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reprodutor{
+    background-color: #473beb;
+    border: 1px solid black;
+    height: 70px;
+}
+
+.botaoPlay{
+    max-height: 60px;
+}
+
+.pagina-livro{
+    background-color: red;
 }

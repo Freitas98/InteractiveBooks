@@ -1,32 +1,34 @@
 var flipbook = $('.livro');
 
-flipbook.turn({
-           
+flipbook.turn({ 
     width: 900,
-
     height: 600,
-
     duration: 1000,
-
     acceleration: true,
-
     gradients: true,
-
     autoCenter: false,
-
     elevation: 50
-
 });
 
-function teste(){
+function atualizarTamanhoLivro(){
     var referencia = document.getElementById("referencia");
-    flipbook.turn('size', $(window).width() * 0.615, $(window).height()*0.7 );
+    var molduraLivro = document.getElementById("divMeio");
+    molduraLivro.style.backgroundSize = "100% 100%";
+    flipbook.turn('size', "100%", $(window).height()*0.73);
+}
+
+function avancarPagina(){
+    flipbook.turn('next');
+}
+
+function voltarPagina(){
+    flipbook.turn('previous');
 }
 
 $(window).on('resize',function() {
-    teste()
+    atualizarTamanhoLivro()
 }).on('orientationchange', function() {
-    teste()
+    atualizarTamanhoLivro()
 }).on('load', function() {
-    teste()
+    atualizarTamanhoLivro()
 });
