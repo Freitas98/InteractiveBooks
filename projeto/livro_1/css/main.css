@@ -4,7 +4,8 @@
 }*/
 
 .texto{
-    font-size:30px;
-    padding:20px;
-    text-align:justify;
+    font-size: 1vw;
+    text-align: justify;
+    font-weight: bold;
+    border-width: 1vw;
 }

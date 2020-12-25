@@ -8,7 +8,7 @@ html, body {
 }
 
 #divMeio{
-    background: url("../../img/moldura_livro2.png"); 
+    background: url("../../img/moldura_livro3.png"); 
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -28,6 +28,8 @@ html, body {
 
 .pagina-livro{
     background-image: url("../../img/folha.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .linhaReprodutor{
@@ -40,4 +42,40 @@ html, body {
     border: 3.2px solid black;
     padding: 0px !important;
     margin: 0px !important;
+}
+
+.pagina-livro-impar{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgb(252, 255, 223)), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, rgb(252, 255, 224) 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, rgb(252, 255, 224) 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, rgb(252, 255, 224) 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, rgb(252, 255, 224) 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, rgb(252, 255, 224) 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+.pagina-livro-par{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, rgb(252, 255, 224)), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, rgb(252, 255, 224) 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, rgb(252, 255, 224) 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, rgb(252, 255, 224) 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, rgb(252, 255, 224) 95%, #dadada 100%);
+    background-image:linear-gradient(left, rgb(252, 255, 224) 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+.texto{
+    font-size: 1vw;
+    text-align: justify;
+    font-weight: bold;
+    border-width: 1vw;
 }
