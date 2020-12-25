@@ -10,7 +10,9 @@ flipbook.turn({
     elevation: 50,
     when:{
         turned: function(event, page, pageObject) {
-			atualizarProgressoReprodutor();
+            atualizarProgressoReprodutor();
+            var audio = new Audio("../../audio/virar-pagina.mp3");
+            audio.play();
         }
     }
 });
@@ -63,6 +65,9 @@ $(window).on('resize',function() {
     atualizarTamanhoBotaoSair()
     atualizarProgressoReprodutor()
 }).on('orientationchange', function() {
+    if(window.innerHeight < window.innerWidth){
+        alert("Por favor utilize o modo de retrato!");
+    }
     atualizarTamanhoLivro()
     atualizarTamanhoReprodutor()
     atualizarTamanhoBotaoSair()
