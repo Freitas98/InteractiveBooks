@@ -36,7 +36,7 @@
         <div class="pagina-livro">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <img class="img-fluid" src="../livro_3/img/titulo_tres_porquinhos.png">
+              <img onclick="reproduzirTitulo()" class="img-fluid elementoClicavel" src="../livro_3/img/titulo_tres_porquinhos.png">
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
                 <img class="img-fluid imagemLivro" src="./img/canaviais.jpg">
               </div>
               <div class="row mx-3 my-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Numa bela manhã de Primavera, entre os altos canaviais que cercavam o ribeiro,
                       nasceram três porquinhos a quem a mãe pôs os nomes de Mico, Chico e Pico.
@@ -61,7 +61,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Durante vários meses viveram muito felizes ao lado da senhora porca, que tinha um aspecto
                       imponente e cuidado.
@@ -78,9 +78,9 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco1.png" alt="">
-                <img style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco2.png" alt="">
-                <img style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco3.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_chico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco1.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_pico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco2.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_mico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco3.png" alt="">
               </div>
             </div>
           </div>
@@ -92,10 +92,10 @@
                 <img class="img-fluid imagemLivro" src="./img/adeus_mae.png">
               </div>
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp A senhora porca avisou-os de que no mundo existiam muitos perigos
-                      e que, gordinhos e resplandecentes como eram, teriam que ter muito cuidado para não serem devorados.
+                      e que, gordinhos e bonitos como eram, teriam que ter muito cuidado para não serem devorados.
                     </p>
                     <p>
                       &nbsp&nbsp&nbsp Mas eles não quiseram ouvi-la e decidiram partir, apesar dos perigos.
@@ -109,7 +109,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp - Pelo menos - disse-lhes a mãe - prometam-me que, para onde vão,
                       construirão uma casinha para se protegerem do lobo, que é o vosso
@@ -122,7 +122,7 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:12vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_mau.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_1')" style="width:12vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_mau.png" alt="">
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
                 <img class="img-fluid imagemLivro" src="./img/construcao_casa_fraca.jpg">
               </div>
               <div class="row m-3">
-                  <div class="zona-texto"> 
+                  <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel"> 
                     <p>
                       &nbsp&nbsp&nbsp Após alguns dias, chegaram a um lugar maravilhoso, repleto de grandes árvores,
                       já muito perto das montanhas altas.
@@ -151,7 +151,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp E começaram a construir uma cabana com folhas e ramos de árvores secos que se
                       encontravam por ali. 
@@ -167,7 +167,7 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:18vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_soprar.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_2')" style="width:18vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_soprar.png" alt="">
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp - Não os como agora porque estou cheio de carne de ovelha - disse o lobo aos porquinhos -
                       Mas não perdem pela demora! Se não for hoje, será amanhã ou depois, ou daqui a três dias...
@@ -185,7 +185,7 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
               </div>
             </div>
           </div>
@@ -197,11 +197,11 @@
                 <img class="img-fluid imagemLivro" src="./img/construcao_casa_media.jpg">
               </div>
               <div class="row m-3">
-                  <div class="zona-texto"> 
+                  <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel"> 
                     <p>
                       &nbsp&nbsp&nbsp Os porquinhos decidiram então construir uma cabana mais resistente.
                       Juntaram ramos e troncos mais resistentes e com tudo isso fizeram uma casinha. Colocaram
-                      uma tranca na porta e, despreocupados, foram-se deitar muito tranquilos. 
+                      uma tranca na porta e, despreocupados, foram deitar-se muito tranquilos. 
                     </p>
                   </div>
               </div>
@@ -212,7 +212,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp No dia seguinte, quando o lobo passou por ali, exclamou a sorrir:
                     </p>
@@ -229,7 +229,7 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                <div class="zona-texto">
+                <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
                   <p>
                     &nbsp&nbsp&nbsp E, aproximando-se da cabana, soprou com todas as suas forças,
                     derrubando a casa dos porquinhos. 
@@ -260,9 +260,9 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Sem tempo a perder, os três irmãos começaram a juntar pedras e construiram uma casa 
+                      &nbsp&nbsp&nbsp Sem tempo a perder, os três irmãos começaram a juntar pedras e construíram uma casa 
                       muito mais segura, onde colocaram uma chaminé muito alta. 
                     </p>
                   </div>
@@ -277,7 +277,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Passaram vários dias sem que o lobo aparecesse por ali. Mas uma tarde
                       viram ao longe o lobo a aproximar-se, muito fraco e com cara de fome. Tremendo de medo, 
@@ -299,7 +299,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp - Vou apanhar-vos! Vou apanhar-vos, por mais que se escondam! - gritou, furioso.
                     </p>
@@ -322,7 +322,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(14)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp E começou a trepar pela chaminé. Mas quando já quase atingia o topo, escorregou e caiu no chão, 
                       magoando-se tanto que decidiu fugir dali para sempre.
@@ -330,7 +330,7 @@
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_caindo_chamine.png" alt="">
+                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_4')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_caindo_chamine.png" alt="">
               </div>
             </div>
           </div>
@@ -339,14 +339,14 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                  <div class="zona-texto">
+                  <div onclick="reproduzirTextoPagina(15)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Com o desaparecimento do lobo, Mico, Chico e Pico viveram então felizes e descansados para sempre. 
                     </p>
                   </div>
               </div>
               <div class="row m-3">
-                <img style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/final_feliz.png" alt="">
+                <img onclick="reproduzirClicavelPagina('iupi_conseguimos')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/final_feliz.png" alt="">
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                <img class="img-fluid" src="./img/fim.png">
+                <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="./img/fim.png">
               </div>
             </div>
           </div>
@@ -373,7 +373,7 @@
         <div class="col-sm-12 my-auto">
           <div id="reprodutor2" class="row linhaReprodutor">
             <div class="col-2 mb-1">
-              <img id="botaoPlay" class="img-fluid botaoPlay" src="../../img/botaoPlay.png" alt="">
+              <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay" src="../../img/botaoPlay.png" alt="">
             </div>
             <div class="col-10 mb-1">
               <div id="barra" class="progress barraProgressoExterior">

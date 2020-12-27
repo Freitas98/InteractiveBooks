@@ -1,4 +1,5 @@
 var flipbook = $('.livro');
+var audio;
 
 flipbook.turn({ 
     width: 900,
@@ -11,11 +12,21 @@ flipbook.turn({
     when:{
         turned: function(event, page, pageObject) {
             atualizarProgressoReprodutor();
-            var audio = new Audio("../../audio/virar-pagina.mp3");
+            pararAudio();
+            audio = new Audio("../../audio/virar-pagina.mp3");
             audio.play();
+        },
+        turning: function(event, page, pageObject) {
+            pararAudio();
         }
     }
 });
+
+function pararAudio(){
+    if(audio){
+        audio.pause();
+    }
+}
 
 function atualizarTamanhoLivro(){
     var referencia = document.getElementById("referencia");
