@@ -26,9 +26,13 @@ function atualizarTamanhoLivro(){
 
 function atualizarTamanhoReprodutor(){
     var reprodutor = document.getElementById("reprodutor");
-    reprodutor.setAttribute("style", "height: " + 100 + "%;")
+    var reprodutor2 = document.getElementById("reprodutor2");
+    var barra = document.getElementById("barra");
+    reprodutor.setAttribute("style", "height: " + $(window).height()*0.10 + "px;")
+    reprodutor2.setAttribute("style", "height: " + $(window).height()*0.10 + "px;")
+    barra.setAttribute("style", "height: " + $(window).height()*0.05 + "px;")
     var botao = document.getElementById("botaoPlay");
-    botao.setAttribute("style", "width: " + $(window).height() * 0.1 + "px;")
+    botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
 }
 
 function atualizarTamanhoProgressBar(){
@@ -47,7 +51,7 @@ function avancarPagina(){
 }
 
 function atualizarProgressoReprodutor(){
-    var numeroTotalPaginas = flipbook.turn('pages');
+    var numeroTotalPaginas = flipbook.turn('pages') - 1;
     var paginaAtual = flipbook.turn('page');
     var progressoAtual = (paginaAtual * 100) / numeroTotalPaginas;
     var barraProgresso = document.getElementById("barraProgresso");
