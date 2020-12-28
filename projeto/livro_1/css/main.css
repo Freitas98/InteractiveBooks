@@ -9,3 +9,13 @@
     font-weight: bold;
     border-width: 1vw;
 }
+
+.elementoClicavel:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.imagemLivro1{
+    border-radius: 2.5rem;
+    max-width: 70%;
+}
