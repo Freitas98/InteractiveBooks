@@ -92,7 +92,7 @@ var version = '4.1.1',
 
     // Size of the active zone of each corner
 
-    cornerSize: 100
+    cornerSize: 30
 
   },
 
