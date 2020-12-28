@@ -1,6 +1,8 @@
 async function reproduzirHistoria(){
-    flipbook.turn('page', 1);
-    await delay(3);
+    if(flipbook.turn('page') != 1){
+        flipbook.turn('page', 1);
+        await delay(3);
+    }
     reproduzirTitulo();
     audio.onended = async function(){
         flipbook.turn("next");
