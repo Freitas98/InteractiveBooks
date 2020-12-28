@@ -1,13 +1,4 @@
-function reproduzirHistoria(){
-    /*var audio1 = new Audio("./audio/teste1.m4a");
-    audio1.play();
-    
-    var audio2 = new Audio("./audio/teste2.m4a");
-    
-    audio1.onended = function() {
-        audio2.play();
-    };*/
-}
+const delay = s => new Promise(res => setTimeout(res, s * 1000));
 
 function reproduzirTextoPagina(int){
     pararAudio();
