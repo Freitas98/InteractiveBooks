@@ -5,14 +5,14 @@ async function reproduzirHistoria(){
     }
     reproduzirTitulo();
     audio.onended = async function(){
-        flipbook.turn("next");
+        avancarPagina();
         await delay(3);
         reproduzirTextoPagina(1);
         audio.onended = async function(){
             await delay(1);
             reproduzirTextoPagina(2);
             audio.onended = async function(){
-                flipbook.turn("next");
+                avancarPagina();
                 await delay(3);
                 reproduzirTextoPagina(3);
                 audio.onended = async function(){
@@ -20,16 +20,16 @@ async function reproduzirHistoria(){
                     reproduzirTextoPagina(4);
                     audio.onended = async function(){
                         await delay(1);
-                        reproduzirClicavelPagina('brilho');
+                        reproduzirClicavelPagina('zip');
                         audio.onended = async function(){
-                            flipbook.turn("next");
+                            avancarPagina();
                             await delay(3);
                             reproduzirTextoPagina(5);
                             audio.onended = async function(){
                                 await delay(1);
                                 reproduzirTextoPagina(6);
                                 audio.onended = async function(){
-                                    flipbook.turn("next");
+                                    avancarPagina();
                                     await delay(3);
                                     reproduzirClicavelPagina('água');
                                     audio.onended = async function(){
@@ -42,7 +42,7 @@ async function reproduzirHistoria(){
                                                 await delay(1);
                                                 reproduzirClicavelPagina('brilho');
                                                 audio.onended = async function(){
-                                                    flipbook.turn("next");
+                                                    avancarPagina();
                                                     await delay(3);
                                                     reproduzirClicavelPagina('enxada');
                                                     audio.onended = async function(){
@@ -52,7 +52,7 @@ async function reproduzirHistoria(){
                                                             await delay(1);
                                                             reproduzirTextoPagina(10);
                                                             audio.onended = async function(){
-                                                                flipbook.turn("next");
+                                                                avancarPagina();
                                                                 await delay(3);
                                                                 reproduzirTextoPagina(11);
                                                                 audio.onended = async function(){
@@ -64,7 +64,7 @@ async function reproduzirHistoria(){
                                                                         audio.onended = async function(){
                                                                             reproduzirClicavelPagina('chiar_rato');
                                                                             audio.onended = async function(){
-                                                                                flipbook.turn("next");
+                                                                                avancarPagina();
                                                                                 await delay(3);
                                                                                 reproduzirTextoPagina(13);
                                                                                 audio.onended = async function(){
@@ -73,7 +73,7 @@ async function reproduzirHistoria(){
                                                                                     audio.onended = async function(){
                                                                                         reproduzirClicavelPagina('harpa');
                                                                                         audio.onended = async function(){
-                                                                                            flipbook.turn("next");
+                                                                                            avancarPagina();
                                                                                             await delay(3);
                                                                                             reproduzirTextoPagina(15);
                                                                                             audio.onended = async function(){
