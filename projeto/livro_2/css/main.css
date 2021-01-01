@@ -3,25 +3,6 @@
     border: solid 1px black;
 }*/
 
-.pagina-livro-impar{ 
-    background-image: url("../img/background-image.png") !important;
-    -webkit-box-shadow:inset 0 0 5px #666 !important;
-    -moz-box-shadow:inset 0 0 5px #666 !important;
-    -o-box-shadow:inset 0 0 5px #666 !important;
-    -ms-box-shadow:inset 0 0 5px #666 !important;
-    box-shadow:inset 0 0 5px #666 !important;
-}
-
-.pagina-livro-par{
-    background-image: url("../img/background-image.png") !important;
-    -webkit-box-shadow:inset 0 0 5px #666 !important;
-    -moz-box-shadow:inset 0 0 5px #666 !important;
-    -o-box-shadow:inset 0 0 5px #666 !important;
-    -ms-box-shadow:inset 0 0 5px #666 !important;
-    box-shadow:inset 0 0 5px #666 !important;
-    
-}
-
 .elementoClicavel:hover{
     transform: scale(1.05);
     cursor: pointer;
@@ -32,6 +13,7 @@
     border: 1px solid #ff171785;
     border-radius: 0.5rem;
     font-size: 2vh;
+    text-align: justify;
 }
 
 p{
