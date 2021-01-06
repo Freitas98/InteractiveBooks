@@ -44,11 +44,19 @@ function atualizarTamanhoReprodutor(){
     barra.setAttribute("style", "height: " + $(window).height()*0.05 + "px;")
     var botao = document.getElementById("botaoPlay");
     botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
+    if (document.getElementById("botao36") != null && document.getElementById("botao710") != null) {
+        var botao2 = document.getElementById("botao36");
+        botao2.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
+        var botao3 = document.getElementById("botao710");
+        botao3.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
+    }
 }
 
 function atualizarTamanhoProgressBar(){
     var progressBar = document.getElementById("botaoPlay");
     botao.setAttribute("style", "width: " + $(window).height() * 0.1 + "px;")
+    botao2.setAttribute("style", "width: " + $(window).height() * 0.1 + "px;")
+    botao3.setAttribute("style", "width: " + $(window).height() * 0.1 + "px;")
 }
 
 function atualizarTamanhoBotaoSair(){
