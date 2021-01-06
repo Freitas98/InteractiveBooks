@@ -2,7 +2,7 @@ const delay = s => new Promise(res => setTimeout(res, s * 1000));
 
 function reproduzirTextoPagina(int){
     pararAudio();
-    audio = new Audio("./audio/audio_folha_" + int +  ".mp3");
+    audio = new Audio("./audio/livro1/audio_folha_" + int +  ".mp3");
     audio.play();
 }
 

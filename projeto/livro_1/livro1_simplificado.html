@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="../livro_1/css/main.css" media="screen" />
 
     <title>O Gato das Botas</title>
+
+    <link rel="icon" href="../../img/gato-das-botas-capa.png">
 </head>
 <body>
   <div class="row mx-2 mt-3">
@@ -36,17 +38,17 @@
         <div class="pagina-livro-impar texto">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <center><img style="width: 80%;" class="img-fluid elementoClicavel" src="../livro_1/img/logo.png" ></center>
+              <center><img onclick="reproduzirTitulo()" style="width: 80%;" class="img-fluid elementoClicavel" src="../livro_1/img/logo.png" ></center>
             </div>
           </div>
         </div>
         <div class="pagina-livro-par">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Um agricultor rico distribuiu todos os seus bens aos três filhos. 
+                      &nbsp&nbsp&nbsp Um agricultor rico distribuiu todos os seus bens pelos seus três filhos. 
                       Ao primeiro deu os seus terrenos, os animais e a casa. 
                       Ao segundo, o moinho e um rebanho de cabras. E ao terceiro, como já não tinha mais nada, deu-lhe um gato.
                     </p>
@@ -65,17 +67,17 @@
             <div class="col-sm-12 my-auto">
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 40%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem2Alternativa.png" >
+                  <img style="width: 40%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem2ComFala.png" >
                 </center>
               </div>
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Os dois irmãos mais velhos ficaram muito satisfeitos; 
                       mas o mais novo não entendia o que teria de fazer para ganhar a vida com aquele animalzinho.
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp Na esperança de encontrar um emprego, foi com o gato para um país distante, onde poderia servir algum senhor importante.
+                      &nbsp&nbsp&nbsp Na esperança de encontrar um trabalho, foi com o gato para um país distante, onde poderia servir algum senhor importante.
                     </p>
                   </div>
               </div>
@@ -85,11 +87,11 @@
         <div class="pagina-livro-par"> 
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Ainda durante a viagem, cedo deu conta que aquele gato era o 
-                      animal mais esperto e atrevido de quantos pudessem existir. 
+                      &nbsp&nbsp&nbsp Ainda durante a viagem, cedo deu conta que aquele gato era um 
+                      animal muito esperto e atrevido. 
                       Com a sua sabedoria e os seus truques, conseguia trazer diariamente ao seu dono a 
                       comida necessária e solucionar qualquer dificuldade que surgisse.
                     </p>
@@ -106,8 +108,8 @@
         <div class="pagina-livro-impar">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Quando chegaram ao país distante, o gato pediu ao dono o chapéu
                        de penas e as botas altas que ele levava na bagagem.
@@ -116,7 +118,7 @@
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 50%;" class="img-fluid imagemLivro" src="../livro_1/img/Imagem4.png" >
+                  <img onclick="reproduzirClicavelPagina('zip')" style="width:50%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem4.png" >
                 </center>
               </div>
             </div>
@@ -125,8 +127,8 @@
         <div class="pagina-livro-par">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Vestido com estes acessórios, o gato pôs imediatamente em prática o seu plano. 
                       Caçou as maiores lebres e as mais belas e gordas perdizes que havia naquela zona e, dia após dia, 
@@ -137,7 +139,7 @@
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 90%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem5.png" >
+                  <img style="width: 90%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem5ComFala.png" >
                 </center>
               </div>
             </div>
@@ -151,11 +153,11 @@
                   <img class="img-fluid imagemLivro1" src="../livro_1/img/Imagem6.png" >
                 </center>
               </div>
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp O rei recebeu tantas vezes estes presentes, que estava verdadeiramente 
-                      desejoso de conhecer aquele nobre que o presentava de tal modo e de que só conhecia através do seu fabuloso gato. 
+                      &nbsp&nbsp&nbsp O rei recebeu tantas vezes estes presentes, que estava verdadeiramente desejoso de conhecer 
+                      aquele nobre que lhe tanto presenteava e que só conhecia através do seu fabuloso gato.
                       Aonteceu que, numa quente tarde de verão, 
                       quando o gato e o dono estavam a refrescar-se no rio, passaram por ali o rei e a sua filha, 
                       numa carruagem puxado por cavalos magníficos.
@@ -170,11 +172,11 @@
             <div class="col-sm-12 my-auto">
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 75%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem7.png" >
+                  <img onclick="reproduzirClicavelPagina('água')" style="width:75%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem7.png" >
                 </center>
               </div>
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp O gato escondeu rapidamente as roupas pobres do rapaz e começou a gritar, 
                       a pedir socorro e a dizer que uns ladrões tinham roubado a roupa do marquês de Carabás. 
@@ -190,10 +192,10 @@
         <div class="pagina-livro-impar">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Depois de se vestir com o luxuoso fato, o jovem saudou muito educadamente 
+                      &nbsp&nbsp&nbsp Depois de se vestir com o luxuoso fato, o jovem cumprimentou muito educadamente 
                       o rei e a sua bela filha que, mal o viu, se apaixonou por ele.          
                     </p>
                     <p>
@@ -207,7 +209,7 @@
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 30%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem8.png" >
+                  <img onclick="reproduzirClicavelPagina('brilho')" style="width:30%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem8.png" >
                 </center>
               </div>
             </div>
@@ -218,11 +220,11 @@
             <div class="col-sm-12 my-auto">
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 75%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem9.png" >
+                  <img onclick="reproduzirClicavelPagina('enxada')" style="width:75%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem9.png" >
                 </center>
               </div>
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Entretanto, o esperto gato foi percorrendo as terras agrícolas onde 
                       trabalhavam os camponeses e pediu-lhes que, se o rei lhes perguntasse, dissessem que todos 
@@ -236,23 +238,23 @@
         <div class="pagina-livro-impar">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Tudo aconteceu como o gato tinha previsto e o rei via de bom humor o 
+                      &nbsp&nbsp&nbsp Tudo aconteceu como o gato tinha previsto e o rei aprovava o 
                       casamento da sua filha com aquele jovem tão rico.
                     </p>
                     <p>
                       &nbsp&nbsp&nbsp Prosseguindo com o seu plano, o gato chegou a um grandioso castelo onde 
                       vivia um monstro que dominava toda a região. Pediu para falar com ele e disse-lhe
-                      que tinha chegado de um país longíquo atraído pela sua grande 
+                      que tinha chegado de um país longínquo atraído pela sua grande 
                       fama e que desejava ver as maravilhas que era capaz de realizar.
                     </p>
                   </div>
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 40%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem10.png" >
+                  <img style="width: 45%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem10ComFala.png" >
                 </center>
               </div>
             </div>
@@ -261,12 +263,11 @@
         <div class="pagina-livro-par">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp O monstro simpatizou com aquele gato com botas e chapéu de penas e, diante 
-                      dele, foi-se transformando sucessivamente num leão, num tigre e nos mais diversas e 
-                      espantosos animais.          
+                      &nbsp&nbsp&nbsp O monstro simpatizou com aquele gato com botas e chapéu de penas e, diante dele, 
+                      transformou-se num leão, num tigre e nos mais diversos e espantosos animais.            
                     </p>
                     <p>
                       &nbsp&nbsp&nbsp O esperto gato fazia de conta que tremia de medo ao observar aquelas 
@@ -279,7 +280,7 @@
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width:50%;"class="img-fluid imagemLivro1" src="../livro_1/img/Imagem11.png" >
+                  <img onclick="reproduzirClicavelPagina('rugir_leao')" style="width:50%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem11.png" >
                 </center>
               </div>
             </div>
@@ -288,13 +289,8 @@
         <div class="pagina-livro-impar">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center>
-                  <img style="width:50%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem12.png" >
-                </center>
-              </div>
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp - Claro que sim! - exclamou o monstro, com muito orgulho - 
                       Já vais ver!
@@ -308,6 +304,11 @@
                       o ratinho e comeu-o.        
                     </p>
                   </div>
+                  <div class="row mx-3 my-3">
+                    <center>
+                      <img onclick="reproduzirClicavelPagina('chiar_rato')" style="width:62.5%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem12.png" >
+                    </center>
+                  </div>
               </div>
             </div>
           </div>
@@ -315,11 +316,11 @@
         <div class="pagina-livro-par ">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Quando a carruagem do rei entrou no pátio daquele castelo com os seus
-                      servos e soldados, lá estava o gato, ansioso por poder voltar a oferecer ao seu dono o 
+                      empregados e soldados, lá estava o gato, ansioso por poder voltar a oferecer ao seu dono o 
                       melhor dos favores.          
                     </p>
                     <p>
@@ -330,7 +331,7 @@
               </div>
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width:55%;"class="img-fluid imagemLivro1" src="../livro_1/img/Imagem13.png" >
+                  <img style="width:55%;"class="img-fluid imagemLivro1" src="../livro_1/img/Imagem13Nova.png" >
                 </center>
               </div>
             </div>
@@ -339,23 +340,21 @@
         <div class="pagina-livro-impar ">
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+              <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(14)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp O rei ficou deslumbrado com aquela magnífica mansão, tão grande e tão 
+                      &nbsp&nbsp&nbsp O rei ficou impressionado com aquela magnífica mansão, tão grande e tão 
                       luxuosa quanto o seu palácio.                    
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp - Querido marquês - disse o rei - não sabia que você possuía um castelo assim,
-                       nem umas terras tão extensas e tão bem cultivadas como as que acabamos de cruzar. 
-                       Estou encantado por vos ter conhecido pessoalmente e também por vos conceder a mão da
-                        minha filha, pois creio que jamais conseguirei encontrar um pretendente melhor...        
+                      &nbsp&nbsp&nbsp - Querido marquês - disse o rei - não sabia que possuía um castelo assim, nem umas terras tão extensas e tão bem cultivadas. Estou encantado por vos ter conhecido pessoalmente e também por vos dar a mão da minha filha, 
+                      pois acredito que jamais conseguirei encontrar um pretendente melhor...      
                     </p>
                   </div>
               </div>
-              <div class="row mx-3 my-3">
+              <div class="row mx-4 my-4">
                 <center>
-                  <img style="width:50%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem14.png" >
+                  <img onclick="reproduzirClicavelPagina('harpa')" style="width:50%;" class="img-fluid elementoClicavel" src="../livro_1/img/Imagem14.png" >
                 </center>
               </div>
             </div>
@@ -366,11 +365,11 @@
             <div class="col-sm-12 my-auto">
               <div class="row mx-3 my-3">
                 <center>
-                  <img style="width: 85%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem15.png" >
+                  <img style="width: 85%;" class="img-fluid imagemLivro1" src="../livro_1/img/Imagem15ComFala.png" >
                 </center>
               </div>
               <div class="row mx-3 my-3">
-                  <div class="zona-texto elementoClicavel">
+                  <div onclick="reproduzirTextoPagina(15)" class="zona-texto elementoClicavel">
                     <p>
                       &nbsp&nbsp&nbsp Poucos dias depois celebrou-se o casamento da filha do rei com o marquês de Carabás. 
                       Tudo foi festa e alegria. E atrás dos noivos, com umas botas brilhantes e um magnífico 
@@ -386,7 +385,7 @@
           <div class="row h-100">
             <div class="col-sm-12 my-auto">
               <div class="row m-3">
-                <img class="img-fluid elementoClicavel" src="../livro_3/img/fim.png">
+                <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="../livro_3/img/fim.png">
               </div>
             </div>
           </div>
@@ -404,12 +403,18 @@
         <div class="col-sm-12 my-auto">
           <div id="reprodutor2" class="row linhaReprodutor">
             <div class="col-2 mb-1">
-              <img id="botaoPlay" class="img-fluid botaoPlay" src="../../img/botaoPlay.png" alt="">
+              <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay" src="../../img/botaoPlay.png" alt="">
             </div>
-            <div class="col-10 mb-1">
+            <div class="col-6 mb-1">
               <div id="barra" class="progress barraProgressoExterior">
                 <div id="barraProgresso" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+            </div>
+            <div class="col-2 mb-1">
+              <a href="livro1_simplificado.html"><img id="botao36" class="img-fluid botaoPlay" src="img/botao36.png" alt=""></a>
+            </div>
+            <div class="col-1 mb-1">
+              <a href="livro1.html"><img id="botao36" class="img-fluid botaoPlay" src="img/botao710.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -421,5 +426,6 @@
 <script src="../../js/livros/config_livros.js"></script>
 
 <!-- Ficheiros JS Exclusivos Páginas -->
-<script src="./js/main.js"></script>
+<script src="./js/main_livro1_simplificado.js"></script>
+<script src="./js/reproduzirHistoriaCompleta.js"></script>
 </html>
