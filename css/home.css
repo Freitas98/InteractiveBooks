@@ -5,3 +5,8 @@
 .imagemCapa{
     width: 80%;
 }
+
+.elementoClicavel:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
