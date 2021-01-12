@@ -23,3 +23,18 @@ p{
     margin-top: 3px !important;
     margin-bottom: 3px !important;
 }
+
+@media only screen and (orientation:portrait){
+    .permitido { 
+        display: none; 
+    }
+
+    .naoPermitido { 
+        display: block; 
+    }
+}
+@media only screen and (orientation:landscape){
+    .naoPermitido{
+        display: none; 
+    }
+}

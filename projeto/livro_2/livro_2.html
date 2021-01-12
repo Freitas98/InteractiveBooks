@@ -21,393 +21,400 @@
     <link rel="icon" href="../../img/capuchinho-vermelho-capa.png">
 </head>
 <body>
-  <div class="row mx-2 mt-3">
-    <div class="col text-center"><a href="../../home.html"><img id="botaoSair" class="img-fluid elementoClicavel" width="50" height="50" src="../../img/sair_porta.png"></a></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-  </div>
-  <div class="row align-items-center mt-3 mx-2">
-    <div class="text-center col-2">
-      <img class="img-fluid elementoClicavel" src="../../img/seta_esquerda.png" onclick="voltarPagina()">
+  <div class="permitido">
+    <div class="row mx-2 mt-3">
+      <div class="col text-center"><a href="../../home.html"><img id="botaoSair" class="img-fluid elementoClicavel" width="50" height="50" src="../../img/sair_porta.png"></a></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
     </div>
-    <div id="divMeio" class="col-8">
-      <div class="livro my-1">
-        <div class="pagina-livro-impar">
-          <div class="row h-100 text-center">
-            <div class="col-sm-12 my-auto">
-              <img onclick="reproduzirTitulo()" class="img-fluid elementoClicavel" src="./img/logo-capuchinho.png" style="width: 80%;">
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img onclick="reproduzirClicavelPagina('primeira-imagem-capuchinho')"class="img-fluid imagemLivro elementoClicavel" src="./img/img1-capuchinho.png" style="width: 60%;"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
-                    <p >
-                      &nbsp&nbsp&nbsp Era uma vez uma menina muito bonita, que vivia numa pequena aldeia. O pai, a mãe... todos gostavam muito dela, mas sobretudo a avózinha que vivia no outro extremo do bosque e que, sempre que a visitava, lhe levava um presente.
-                    </p>
-                  </div>
+    <div class="row align-items-center mt-3 mx-2">
+      <div class="text-center col-2">
+        <img class="img-fluid elementoClicavel" src="../../img/seta_esquerda.png" onclick="voltarPagina()">
+      </div>
+      <div id="divMeio" class="col-8">
+        <div class="livro my-1">
+          <div class="pagina-livro-impar">
+            <div class="row h-100 text-center">
+              <div class="col-sm-12 my-auto">
+                <img onclick="reproduzirTitulo()" class="img-fluid elementoClicavel" src="./img/logo-capuchinho.png" style="width: 80%;">
               </div>
             </div>
           </div>
-          
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbspNuma das suas visitas, a avó ofereceu um capuchinho de lã colorida, que tricotou especialmente para a sua neta.
-                    O capuchinho ficava tão bem, que todos lhe chamavam de capuchinho vermelho. 
-                    Um dia, a mãe disse-lhe:
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- Capuchinho, um lenhador disse-me que a avó está doente. Gostava que fosses visitá-la e lhe levasses este queijo e este pote de mel.  Mas não pares para falar com ninguém. 
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbspCapuchinho colocou tudo no cesto e dirigiu-se para a casa da avó. 
-                  </p>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img onclick="reproduzirClicavelPagina('primeira-imagem-capuchinho')"class="img-fluid imagemLivro elementoClicavel" src="./img/img1-capuchinho.png" style="width: 60%;"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
+                      <p >
+                        &nbsp&nbsp&nbsp Era uma vez uma menina muito bonita, que vivia numa pequena aldeia. O pai, a mãe... todos gostavam muito dela, mas sobretudo a avózinha que vivia no outro extremo do bosque e que, sempre que a visitava, lhe levava um presente.
+                      </p>
+                    </div>
                 </div>
               </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('capuchinho-tricotado')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/img-capuchinho.png" alt="">
-                <img onclick="reproduzirClicavelPagina('mae-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/mae.png" alt="">
-              </div>
             </div>
+            
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img onclick="reproduzirClicavelPagina('lobo-fome')" class="img-fluid imagemLivro elementoClicavel" src="./img/lobo-atras-arbusto.png" style="width: 35%;"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
-                    <p >
-                      &nbsp&nbsp&nbsp Ao passar pelo bosque, cruzou-se com muitos animais simpáticos: um esquilo a fazer piruetas, um coelho  à procura da sua toca, uma borboleta  a abrir as suas lindíssimas asas sobre  uma flor, um passarinho a cantar alegremente... e também se encontrou com o lobo, que a espreitava por detrás de uns arbustos e lambia os beiços.
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbspNuma das suas visitas, a avó ofereceu um capuchinho de lã colorida, que tricotou especialmente para a sua neta.
+                      O capuchinho ficava tão bem, que todos lhe chamavam de capuchinho vermelho. 
+                      Um dia, a mãe disse-lhe:
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp - Onde vais, Capuchinho, tão só por este bosque? - perguntou-lhe com um sorriso falso. E a menina, que não suspeitava das malvadas intenções do lobo, respondeu inocentemente:
+                      &nbsp&nbsp&nbsp- Capuchinho, um lenhador disse-me que a avó está doente. Gostava que fosses visitá-la e lhe levasses este queijo e este pote de mel.  Mas não pares para falar com ninguém. 
                     </p>
                     <p>
-                      - Vou visitar a minha avó, que está doente.
+                      &nbsp&nbsp&nbspCapuchinho colocou tudo no cesto e dirigiu-se para a casa da avó. 
                     </p>
                   </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp- E o que lhe levas nessa cesta?
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- Levo-lhe um queijo, um bolo e um pote de mel.  
-                  </p>  
-                  <p>
-                    &nbsp&nbsp&nbsp- Que feliz ela vai ficar! - disse o lobo, que não se atrevia a devorá-la ali mesmo porque tinha visto por perto uns lenhadores.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- E vive muito longe? 
-                  </p>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('capuchinho-tricotado')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/img-capuchinho.png" alt="">
+                  <img onclick="reproduzirClicavelPagina('mae-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/mae.png" alt="">
                 </div>
               </div>
-              <div class="row m-3">
-                <div class="col-md"><img onclick="reproduzirClicavelPagina('cesta-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/cesto.png" alt=""></div>
-                <div class="col-md"><img onclick="reproduzirClicavelPagina('queijo-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/queijo.png" alt=""></div>
-                <div class="col-md"><img onclick="reproduzirClicavelPagina('mel-som')" style="width:5vw" class="mx-auto d-block elementoClicavel" src="./img/mel.png" alt=""></div>
-                
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img onclick="reproduzirClicavelPagina('lobo-fome')" class="img-fluid imagemLivro elementoClicavel" src="./img/lobo-atras-arbusto.png" style="width: 35%;"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
+                      <p >
+                        &nbsp&nbsp&nbsp Ao passar pelo bosque, cruzou-se com muitos animais simpáticos: um esquilo a fazer piruetas, um coelho  à procura da sua toca, uma borboleta  a abrir as suas lindíssimas asas sobre  uma flor, um passarinho a cantar alegremente... e também se encontrou com o lobo, que a espreitava por detrás de uns arbustos e lambia os beiços.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp - Onde vais, Capuchinho, tão só por este bosque? - perguntou-lhe com um sorriso falso. E a menina, que não suspeitava das malvadas intenções do lobo, respondeu inocentemente:
+                      </p>
+                      <p>
+                        - Vou visitar a minha avó, que está doente.
+                      </p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img onclick="reproduzirClicavelPagina('casa-som')" class="img-fluid imagemLivro elementoClicavel" src="./img/casa-avo.png" style="width: 45%;"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel">
-                    <p >
-                      &nbsp&nbsp&nbsp- No outro extremo do bosque - explicou-lhe a menina -, numa casinha branca com janelas verdes.
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp- E o que lhe levas nessa cesta?
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp- Ah, sim, conheço - disse o lobo.
+                      &nbsp&nbsp&nbsp- Levo-lhe um queijo, um bolo e um pote de mel.  
+                    </p>  
+                    <p>
+                      &nbsp&nbsp&nbsp- Que feliz ela vai ficar! - disse o lobo, que não se atrevia a devorá-la ali mesmo porque tinha visto por perto uns lenhadores.
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp- É muito bonita. Mas para ires para lá é melhor que cortes por este atalho à esquerda. Que chegarás muito mais depressa e, além disso, encontrarás lindas flores para fazeres um ramo.
+                      &nbsp&nbsp&nbsp- E vive muito longe? 
                     </p>
                   </div>
+                </div>
+                <div class="row m-3">
+                  <div class="col-md"><img onclick="reproduzirClicavelPagina('cesta-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/cesto.png" alt=""></div>
+                  <div class="col-md"><img onclick="reproduzirClicavelPagina('queijo-som')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/queijo.png" alt=""></div>
+                  <div class="col-md"><img onclick="reproduzirClicavelPagina('mel-som')" style="width:5vw" class="mx-auto d-block elementoClicavel" src="./img/mel.png" alt=""></div>
+                  
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp- Muito obrigada, senhor lobo! - disse a menina toda contente.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbspE sem dar conta que estava a cair numa armadilha, Capuchinho foi pelo  atalho da esquerda.
-                  </p>
-                  <p>
-                     &nbsp&nbsp&nbspO lobo, entretanto, desatou a correr pelo atalho da direita - que na realidade era muito mais curto - e chegou primeiro à casa da avó.
-                  </p>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img onclick="reproduzirClicavelPagina('casa-som')" class="img-fluid imagemLivro elementoClicavel" src="./img/casa-avo.png" style="width: 45%;"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel">
+                      <p >
+                        &nbsp&nbsp&nbsp- No outro extremo do bosque - explicou-lhe a menina -, numa casinha branca com janelas verdes.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- Ah, sim, conheço - disse o lobo.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- É muito bonita. Mas para ires para lá é melhor que cortes por este atalho à esquerda. Que chegarás muito mais depressa e, além disso, encontrarás lindas flores para fazeres um ramo.
+                      </p>
+                    </div>
                 </div>
               </div>
-              <div class="row mx-3 my-3">
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('muito-obrigado-capuchinho')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/capuchinho-obrigado.png" alt="">
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp- Muito obrigada, senhor lobo! - disse a menina toda contente.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbspE sem dar conta que estava a cair numa armadilha, Capuchinho foi pelo  atalho da esquerda.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbspO lobo, entretanto, desatou a correr pelo atalho da direita - que na realidade era muito mais curto - e chegou primeiro à casa da avó.
+                    </p>
+                  </div>
+                </div>
+                <div class="row mx-3 my-3">
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('muito-obrigado-capuchinho')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/capuchinho-obrigado.png" alt="">
 
-                </div>
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('lobo-enganei')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/lobo-enganei.png" alt="">
+                  </div>
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('lobo-enganei')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/lobo-enganei.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img onclick="reproduzirClicavelPagina('lobo-porta')" class="img-fluid imagemLivro elementoClicavel" src="./img/knockknock.png" style="width: 45%;"></center>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img onclick="reproduzirClicavelPagina('lobo-porta')" class="img-fluid imagemLivro elementoClicavel" src="./img/knockknock.png" style="width: 45%;"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
+                      <p >
+                        &nbsp&nbsp&nbspTruz, truz... Soou o batente da porta.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- Quem é? - perguntou a avó, deitada na cama.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- Sou o Capuchinho Vermelho - respondeu o lobo, disfarçando a sua voz.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- Trago-te um queijo, um bolo e um pote de mel. 
+                      </p>
+                    </div>
+                </div>
               </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
-                    <p >
-                      &nbsp&nbsp&nbspTruz, truz... Soou o batente da porta.
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp- Roda o puxador e abre a porta. Eu não me posso levantar... - disse a avó.
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp- Quem é? - perguntou a avó, deitada na cama.
+                      &nbsp&nbsp&nbspEntão, o lobo entrou e, com um  salto, lançou-se sobre a avó e devorou-a.
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp- Sou o Capuchinho Vermelho - respondeu o lobo, disfarçando a sua voz.
+                      &nbsp&nbsp&nbsp Depois, vestiu a camisa e o gorro de dormir e meteu-se na cama, à espera de Capuchinho.
                     </p>
-                    <p>
-                      &nbsp&nbsp&nbsp- Trago-te um queijo, um bolo e um pote de mel. 
+                    <p> 
+                      &nbsp&nbsp&nbsp Até que ouviu um bater à porta... 
                     </p>
                   </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp- Roda o puxador e abre a porta. Eu não me posso levantar... - disse a avó.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbspEntão, o lobo entrou e, com um  salto, lançou-se sobre a avó e devorou-a.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp Depois, vestiu a camisa e o gorro de dormir e meteu-se na cama, à espera de Capuchinho.
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp Até que ouviu um bater à porta... 
-                  </p>
+                </div>
+                <div class="row mx-4 my-4">
+                  <img onclick="reproduzirClicavelPagina('lobo-vestido')" style="width:55%" class="mx-auto d-block elementoClicavel" src="./img/lobo-cama.png" alt="">
                 </div>
               </div>
-              <div class="row mx-4 my-4">
-                <img onclick="reproduzirClicavelPagina('lobo-vestido')" style="width:55%" class="mx-auto d-block elementoClicavel" src="./img/lobo-cama.png" alt="">
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img onclick="reproduzirClicavelPagina('capuchinho-porta')" class="img-fluid imagemLivro elementoClicavel" src="./img/capuchinhoknockknock.png" style="width: 35%;"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
+                      <p >
+                        &nbsp&nbsp&nbsp- Quem é? - perguntou o lobo, imitando a voz da avó.  
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbspA menina estranhou a voz, mas pensou que a avó estava constipada e respondeu:
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp- Sou eu, Capuchinho Vermelho, a tua neta. Trago-te queijo, um bolo e um pote de mel.
+                      </p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img onclick="reproduzirClicavelPagina('capuchinho-porta')" class="img-fluid imagemLivro elementoClicavel" src="./img/capuchinhoknockknock.png" style="width: 35%;"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
-                    <p >
-                      &nbsp&nbsp&nbsp- Quem é? - perguntou o lobo, imitando a voz da avó.  
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp- Ah! E também um raminho de flores.
                     </p>
                     <p>
-                      &nbsp&nbsp&nbspA menina estranhou a voz, mas pensou que a avó estava constipada e respondeu:
+                      &nbsp&nbsp&nbsp- Entra, querida. Roda o puxador que a porta se abrirá. 
                     </p>
                     <p>
-                      &nbsp&nbsp&nbsp- Sou eu, Capuchinho Vermelho, a tua neta. Trago-te queijo, um bolo e um pote de mel.
+                      &nbsp&nbsp&nbsp Capuchinho entrou e o lobo, escondido atrás da cama, disse:
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- Deixa tudo sobre a mesa e deita-te comigo na cama, porque está frio. 
                     </p>
                   </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp- Ah! E também um raminho de flores.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- Entra, querida. Roda o puxador que a porta se abrirá. 
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp Capuchinho entrou e o lobo, escondido atrás da cama, disse:
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- Deixa tudo sobre a mesa e deita-te comigo na cama, porque está frio. 
-                  </p>
                 </div>
-              </div>
-              <div class="row mx-3 my-3">
-                <img onclick="reproduzirClicavelPagina('entra-netinha')" style="width:55%" class="mx-auto d-block elementoClicavel" src="./img/lobo-escondido.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp Capuchinho descalçou os sapatos e deitou-se na cama, mas logo a seguir surpreendeu-se com a estranha figura da sua avó.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- Avózinha, que braços tão compridos tens - exclamou. 
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- São para te abraçar melhor, Capuchinho.
-                  </p>
-                </div>
-              </div>
-              <div class="row mx-3 my-3">
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('avo-estranha')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/capuchinho-avo-estranha.png" alt="">
-                </div>
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('braco-comprido')" style="width:65%; margin-top: 30px;" class="mx-auto d-block elementoClicavel" src="./img/bracolobo.png" alt="">
+                <div class="row mx-3 my-3">
+                  <img onclick="reproduzirClicavelPagina('entra-netinha')" style="width:55%" class="mx-auto d-block elementoClicavel" src="./img/lobo-escondido.png" alt="">
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp- Avózinha, que orelhas tão grandes tens!
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- São para te ouvir melhor, minha netinha.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp- Avózinha, que olhos tão grandes tens! 
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- São para te ver melhor, meu amor. 
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- Avózinha, que nariz tão grande tens! 
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- É para te cheirar melhor, meu tesouro. 
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- Avózinha, que dentes tão grandes tens!
-                  </p>
-                  <p> 
-                    &nbsp&nbsp&nbsp- São... para te comer melhor - disse o lobo, saltando sobre Capuchinho e devorando-a.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp Pouco depois, passaram por ali lenhadores. Alarmados com o roncar que vinha da casa.
-                  </p>  
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp Capuchinho descalçou os sapatos e deitou-se na cama, mas logo a seguir surpreendeu-se com a estranha figura da sua avó.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp- Avózinha, que braços tão compridos tens - exclamou. 
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp- São para te abraçar melhor, Capuchinho.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="row mx-3 my-3">
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('que-barulho')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/lenhador-que-barulho.png" alt="">
-                </div>
-                <div class="col-md">
-                  <img onclick="reproduzirClicavelPagina('lobo-dormir')" style="width:75%;margin-top:30px" class="mx-auto d-block elementoClicavel" src="./img/lobo-dormir.png" alt="">
+                <div class="row mx-3 my-3">
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('avo-estranha')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/capuchinho-avo-estranha.png" alt="">
+                  </div>
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('braco-comprido')" style="width:65%; margin-top: 30px;" class="mx-auto d-block elementoClicavel" src="./img/bracolobo.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp Arrombaram a porta e encontraram o lobo a dormir profundamente e com a barriga bem cheia.
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbspAbriram-lhe a barriga com uma faca e de lá saíram, são e salvas, a avó e Capuchinho Vermelho. 
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp Para festejar, a avó e a neta convidaram os caçadores para lancharem queijo, bolo e mel. Capuchinho nunca mais se deteve no bosque a falar com estranhos.
-                  </p>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp- Avózinha, que orelhas tão grandes tens!
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp- São para te ouvir melhor, minha netinha.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp- Avózinha, que olhos tão grandes tens! 
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- São para te ver melhor, meu amor. 
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- Avózinha, que nariz tão grande tens! 
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- É para te cheirar melhor, meu tesouro. 
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- Avózinha, que dentes tão grandes tens!
+                    </p>
+                    <p> 
+                      &nbsp&nbsp&nbsp- São... para te comer melhor - disse o lobo, saltando sobre Capuchinho e devorando-a.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp Pouco depois, passaram por ali lenhadores. Alarmados com o roncar que vinha da casa.
+                    </p>  
+                  </div>
                 </div>
-              </div>
-              <div class="row mx-3 my-3">
-                  <img style="width:75%" class="mx-auto d-block" src="./img/salvas-fim.png" alt="">
+                <div class="row mx-3 my-3">
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('que-barulho')" style="width:75%" class="mx-auto d-block elementoClicavel" src="./img/lenhador-que-barulho.png" alt="">
+                  </div>
+                  <div class="col-md">
+                    <img onclick="reproduzirClicavelPagina('lobo-dormir')" style="width:75%;margin-top:30px" class="mx-auto d-block elementoClicavel" src="./img/lobo-dormir.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row m-3">
-                <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="./img/fim.png">
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
+                    <p>
+                      &nbsp&nbsp&nbsp Arrombaram a porta e encontraram o lobo a dormir profundamente e com a barriga bem cheia.
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbspAbriram-lhe a barriga com uma faca e de lá saíram, são e salvas, a avó e Capuchinho Vermelho. 
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp Para festejar, a avó e a neta convidaram os caçadores para lancharem queijo, bolo e mel. Capuchinho nunca mais se deteve no bosque a falar com estranhos.
+                    </p>
+                  </div>
+                </div>
+                <div class="row mx-3 my-3">
+                    <img style="width:75%" class="mx-auto d-block" src="./img/salvas-fim.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row m-3">
+                  <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="./img/fim.png">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="referencia" class="col-2 text-center">
+        <img class="img-fluid elementoClicavel" src="../../img/seta_direita.png" onclick="avancarPagina()">
+      </div>
     </div>
-    <div id="referencia" class="col-2 text-center">
-      <img class="img-fluid elementoClicavel" src="../../img/seta_direita.png" onclick="avancarPagina()">
+    <div class="row mx-2 mt-3">
+      <div class="col-2"></div>
+      <div id="reprodutor" class="col-8 text-center reprodutor">
+        <div class="row h-100">
+          <div class="col-sm-12 my-auto">
+            <div id="reprodutor2" class="row linhaReprodutor">
+              <div class="col-2 mb-1">
+                <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay elementoClicavel" src="../../img/botaoPlay.png" alt="">
+              </div>
+              <div class="col-10 mb-1">
+                <div id="barra" class="progress barraProgressoExterior">
+                  <div id="barraProgresso" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row mx-2 mt-3">
-    <div class="col-2"></div>
-    <div id="reprodutor" class="col-8 text-center reprodutor">
-      <div class="row h-100">
-        <div class="col-sm-12 my-auto">
-          <div id="reprodutor2" class="row linhaReprodutor">
-            <div class="col-2 mb-1">
-              <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay elementoClicavel" src="../../img/botaoPlay.png" alt="">
-            </div>
-            <div class="col-10 mb-1">
-              <div id="barra" class="progress barraProgressoExterior">
-                <div id="barraProgresso" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2"></div>
-      </div>
+  <div class="naoPermitido h-100">
+    <div class="row align-items-center h-100">
+        <img src="../../img/avisoGirarTelemovel.png" class="img-fluid"></img>
     </div>
   </div>
 </body>

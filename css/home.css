@@ -10,3 +10,18 @@
     transform: scale(1.05) duration;
     cursor: pointer;
 }
+
+@media only screen and (orientation:portrait){
+    .permitido { 
+        display: none; 
+    }
+
+    .naoPermitido { 
+        display: block; 
+    }
+}
+@media only screen and (orientation:landscape){
+    .naoPermitido{
+        display: none; 
+    }
+}
