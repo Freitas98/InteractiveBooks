@@ -88,9 +88,6 @@ $(window).on('resize',function() {
     atualizarTamanhoBotaoSair()
     atualizarProgressoReprodutor()
 }).on('orientationchange', function() {
-    if(window.innerHeight < window.innerWidth){
-        alert("Por favor utilize o modo de retrato!");
-    }
     atualizarTamanhoLivro()
     atualizarTamanhoReprodutor()
     atualizarTamanhoBotaoSair()

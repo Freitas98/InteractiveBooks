@@ -29,3 +29,22 @@ p{
     transform: scale(1.05);
     cursor: pointer;
 }
+
+.naoPermitido{ 
+    display: none; 
+  }
+
+@media (orientation:portrait){
+    .permitido { 
+        display: none; 
+    }
+
+    .naoPermitido { 
+        display: block; 
+    }
+}
+@media (orientation:landscape){
+    .naoPermitido{
+        display: none; 
+    }
+}

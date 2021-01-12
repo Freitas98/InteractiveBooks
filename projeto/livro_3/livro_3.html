@@ -21,371 +21,378 @@
     <link rel="icon" href="../../img/os-tres-porquinhos-capa.png">
 </head>
 <body>
-  <div class="row mx-2 mt-3">
-    <div class="col text-center"><a href="../../home.html"><img id="botaoSair" class="img-fluid elementoClicavel" width="50" height="50" src="../../img/sair_porta.png"></a></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-  </div>
-  <div class="row align-items-center mt-3 mx-2">
-    <div class="text-center col-2">
-      <img class="img-fluid elementoClicavel" src="../../img/seta_esquerda.png" onclick="voltarPagina()">
+  <div class="permitido">
+    <div class="row mx-2 mt-3">
+      <div class="col text-center"><a href="../../home.html"><img id="botaoSair" class="img-fluid elementoClicavel" width="50" height="50" src="../../img/sair_porta.png"></a></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
     </div>
-    <div id="divMeio" class="col-8">
-      <div class="livro my-1">
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <center><img onclick="reproduzirTitulo()" class="img-fluid elementoClicavel" style="width: 90%" src="../livro_3/img/titulo_tres_porquinhos.png"></center>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-3 my-3">
-                <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/canaviais.jpg"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp Numa bela manhã de Primavera, entre os altos canaviais que cercavam o ribeiro,
-                      nasceram três porquinhos a quem a mãe pôs os nomes de Mico, Chico e Pico.
-                    </p>
-                  </div>
+    <div class="row align-items-center mt-3 mx-2">
+      <div class="text-center col-2">
+        <img class="img-fluid elementoClicavel" src="../../img/seta_esquerda.png" onclick="voltarPagina()">
+      </div>
+      <div id="divMeio" class="col-8">
+        <div class="livro my-1">
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <center><img onclick="reproduzirTitulo()" class="img-fluid elementoClicavel" style="width: 90%" src="../livro_3/img/titulo_tres_porquinhos.png"></center>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp Durante vários meses viveram muito felizes ao lado da senhora porca, que tinha um aspecto
-                      imponente e cuidado.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp Nessa altura, a ocupação de Mico, Chico e Pico era correr de um lado para o 
-                      outro ao lado da mãe, escavar a terra em busca de batatas e raízes e rebolar na lama.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp Mas, logo que ficaram fortes e crescidos, eles decidiram afastar-se e
-                      percorrer o mundo, pois diziam que era muito aborrecido viver sempre junto ao ribeiro 
-                      e aos canaviais.
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_chico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco1.png" alt="">
-                <img onclick="reproduzirClicavelPagina('fala_pico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco2.png" alt="">
-                <img onclick="reproduzirClicavelPagina('fala_mico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco3.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row m-3">
-                <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/adeus_mae.png"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp A senhora porca avisou-os de que no mundo existiam muitos perigos
-                      e que, gordinhos e bonitos como eram, teriam que ter muito cuidado para não serem devorados.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp Mas eles não quiseram ouvi-la e decidiram partir, apesar dos perigos.
-                    </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp - Pelo menos - disse-lhes a mãe - prometam-me que, para onde vão,
-                      construirão uma casinha para se protegerem do lobo, que é o vosso
-                      maior inimigo. 
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp Eles prometeram que assim o fariam e, muito alegres e felizes,
-                      partiram rumo ao desconhecido para viverem a sua vida.
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_1')" style="width:12vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_mau.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row m-3">
-                <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/construcao_casa_fraca.jpg"></center>
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel"> 
-                    <p>
-                      &nbsp&nbsp&nbsp Após alguns dias, chegaram a um lugar maravilhoso, repleto de grandes árvores,
-                      já muito perto das montanhas altas.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp - Fazemos aqui a nossa casinha - sugeriu o Mico. 
-                    </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp E começaram a construir uma cabana com folhas e ramos de árvores secos que se
-                      encontravam por ali. 
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp A casa ficou muito bonita. Mas, no dia seguinte, o lobo passou por ali e aproximou-se para ver o que
-                      era aquilo. O lobo vinha com a barriga cheia, pois tinha comido duas ovelhas.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp Quando viu que se tratava de uma cabana, sentou-se nas suas patas traseiras,
-                      soprou com toda a força e a cabana veio toda abaixo. 
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_2')" style="width:18vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_soprar.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp - Não os como agora porque estou cheio de carne de ovelha - disse o lobo aos porquinhos -
-                      Mas não perdem pela demora! Se não for hoje, será amanhã ou depois, ou daqui a três dias...
-                      Do que podem estar seguros é que acabarão dentro da minha barriga... Ah, Ah, Ah! 
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row m-3">
-                <center><img style="width: 85%" class="img-fluid imagemLivro" src="./img/construcao_casa_media.jpg">
-              </div>
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel"> 
-                    <p>
-                      &nbsp&nbsp&nbsp Os porquinhos decidiram então construir uma cabana mais resistente.
-                      Juntaram ramos e troncos mais resistentes e com tudo isso fizeram uma casinha. Colocaram
-                      uma tranca na porta e, despreocupados, foram deitar-se muito tranquilos. 
-                    </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp No dia seguinte, quando o lobo passou por ali, exclamou a sorrir:
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp - Que casa tão bonita que vocês construiram! 
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp E em seguida gritou:
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp - Esta noite comi três cordeiros e tenho a barriga cheia, mas amanhã
-                      ou depois comer-vos-ei. Ah, Ah, Ah!
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
-                  <p>
-                    &nbsp&nbsp&nbsp E, aproximando-se da cabana, soprou com todas as suas forças,
-                    derrubando a casa dos porquinhos. 
-                  </p>
-                  <p>
-                    &nbsp&nbsp&nbsp Os porquinhos fugiram dali, cheios de medo, enquanto
-                    o lobo continuava o seu caminho até à montanha, rindo às gargalhadas
-                    e lambendo os bigodes.
-                  </p>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-3 my-3">
+                  <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/canaviais.jpg"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(1)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp Numa bela manhã de Primavera, entre os altos canaviais que cercavam o ribeiro,
+                        nasceram três porquinhos a quem a mãe pôs os nomes de Mico, Chico e Pico.
+                      </p>
+                    </div>
                 </div>
               </div>
-              <div class="row m-3">
-                <center><img style="width: 85%" class="img-fluid imagemLivro" src="./img/lobo_destroi_casa.jpg"></center>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(2)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp Durante vários meses viveram muito felizes ao lado da senhora porca, que tinha um aspecto
+                        imponente e cuidado.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp Nessa altura, a ocupação de Mico, Chico e Pico era correr de um lado para o 
+                        outro ao lado da mãe, escavar a terra em busca de batatas e raízes e rebolar na lama.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp Mas, logo que ficaram fortes e crescidos, eles decidiram afastar-se e
+                        percorrer o mundo, pois diziam que era muito aborrecido viver sempre junto ao ribeiro 
+                        e aos canaviais.
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_chico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco1.png" alt="">
+                  <img onclick="reproduzirClicavelPagina('fala_pico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco2.png" alt="">
+                  <img onclick="reproduzirClicavelPagina('fala_mico')" style="width:7vw" class="mx-auto d-block elementoClicavel" src="./img/porco3.png" alt="">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row m-3">
+                  <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/adeus_mae.png"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(3)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp A senhora porca avisou-os de que no mundo existiam muitos perigos
+                        e que, gordinhos e bonitos como eram, teriam que ter muito cuidado para não serem devorados.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp Mas eles não quiseram ouvi-la e decidiram partir, apesar dos perigos.
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(4)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp - Pelo menos - disse-lhes a mãe - prometam-me que, para onde vão,
+                        construirão uma casinha para se protegerem do lobo, que é o vosso
+                        maior inimigo. 
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp Eles prometeram que assim o fariam e, muito alegres e felizes,
+                        partiram rumo ao desconhecido para viverem a sua vida.
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_lobo_mau_1')" style="width:12vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_mau.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row m-3">
+                  <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/construcao_casa_fraca.jpg"></center>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(5)" class="zona-texto elementoClicavel"> 
+                      <p>
+                        &nbsp&nbsp&nbsp Após alguns dias, chegaram a um lugar maravilhoso, repleto de grandes árvores,
+                        já muito perto das montanhas altas.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp - Fazemos aqui a nossa casinha - sugeriu o Mico. 
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(6)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp E começaram a construir uma cabana com folhas e ramos de árvores secos que se
+                        encontravam por ali. 
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp A casa ficou muito bonita. Mas, no dia seguinte, o lobo passou por ali e aproximou-se para ver o que
+                        era aquilo. O lobo vinha com a barriga cheia, pois tinha comido duas ovelhas.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp Quando viu que se tratava de uma cabana, sentou-se nas suas patas traseiras,
+                        soprou com toda a força e a cabana veio toda abaixo. 
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_lobo_mau_2')" style="width:18vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_soprar.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(7)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp - Não os como agora porque estou cheio de carne de ovelha - disse o lobo aos porquinhos -
+                        Mas não perdem pela demora! Se não for hoje, será amanhã ou depois, ou daqui a três dias...
+                        Do que podem estar seguros é que acabarão dentro da minha barriga... Ah, Ah, Ah! 
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row m-3">
+                  <center><img style="width: 85%" class="img-fluid imagemLivro" src="./img/construcao_casa_media.jpg">
+                </div>
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(8)" class="zona-texto elementoClicavel"> 
+                      <p>
+                        &nbsp&nbsp&nbsp Os porquinhos decidiram então construir uma cabana mais resistente.
+                        Juntaram ramos e troncos mais resistentes e com tudo isso fizeram uma casinha. Colocaram
+                        uma tranca na porta e, despreocupados, foram deitar-se muito tranquilos. 
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(9)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp No dia seguinte, quando o lobo passou por ali, exclamou a sorrir:
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp - Que casa tão bonita que vocês construiram! 
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp E em seguida gritou:
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp - Esta noite comi três cordeiros e tenho a barriga cheia, mas amanhã
+                        ou depois comer-vos-ei. Ah, Ah, Ah!
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_lobo_mau_3')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_rir.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                  <div onclick="reproduzirTextoPagina(10)" class="zona-texto elementoClicavel">
                     <p>
-                      &nbsp&nbsp&nbsp Sem tempo a perder, os três irmãos começaram a juntar pedras e construíram uma casa 
-                      muito mais segura, onde colocaram uma chaminé muito alta. 
+                      &nbsp&nbsp&nbsp E, aproximando-se da cabana, soprou com todas as suas forças,
+                      derrubando a casa dos porquinhos. 
+                    </p>
+                    <p>
+                      &nbsp&nbsp&nbsp Os porquinhos fugiram dali, cheios de medo, enquanto
+                      o lobo continuava o seu caminho até à montanha, rindo às gargalhadas
+                      e lambendo os bigodes.
                     </p>
                   </div>
-              </div>
-              <div class="row m-3">
-                <center><img style="width: 80%" class="img-fluid imagemLivro" src="./img/construcao_casa_forte.jpg"></center>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp Passaram vários dias sem que o lobo aparecesse por ali. Mas uma tarde
-                      viram ao longe o lobo a aproximar-se, muito fraco e com cara de fome. Tremendo de medo, 
-                      os três porquinhos correram para dentro de casa.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp O lobo aproximou-se, farejou as paredes de pedra e, com as suas unhas,
-                      tentou cavar um buraco. Mas este, apesar de tentar muito, o muro não cedeu.
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/lobo_tentar_entrar_casa.jpg"></center>
+                </div>
+                <div class="row m-3">
+                  <center><img style="width: 85%" class="img-fluid imagemLivro" src="./img/lobo_destroi_casa.jpg"></center>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp - Vou apanhar-vos! Vou apanhar-vos, por mais que se escondam! - gritou, furioso.
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp E, ao ver que não conseguia derrubar as paredes nem entrar pela porta da casa, 
-                      decidiu subir ao telhado. 
-                    </p>
-                    <p>
-                      &nbsp&nbsp&nbsp - Entrarei pela chaminé! Ah, ah, ah! - gritou com um ar sorridente.  
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <center><img style="width: 80%" class="img-fluid imagemLivro" src="./img/subir_chamine.jpg"></center>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(11)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp Sem tempo a perder, os três irmãos começaram a juntar pedras e construíram uma casa 
+                        muito mais segura, onde colocaram uma chaminé muito alta. 
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <center><img style="width: 80%" class="img-fluid imagemLivro" src="./img/construcao_casa_forte.jpg"></center>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(14)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp E começou a trepar pela chaminé. Mas quando já quase atingia o topo, escorregou e caiu no chão, 
-                      magoando-se tanto que decidiu fugir dali para sempre.
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('fala_lobo_mau_4')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_caindo_chamine.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagina-livro-par">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row mx-4 my-4">
-                  <div onclick="reproduzirTextoPagina(15)" class="zona-texto elementoClicavel">
-                    <p>
-                      &nbsp&nbsp&nbsp Com o desaparecimento do lobo, Mico, Chico e Pico viveram então felizes e descansados para sempre. 
-                    </p>
-                  </div>
-              </div>
-              <div class="row m-3">
-                <img onclick="reproduzirClicavelPagina('iupi_conseguimos')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/final_feliz.png" alt="">
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(12)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp Passaram vários dias sem que o lobo aparecesse por ali. Mas uma tarde
+                        viram ao longe o lobo a aproximar-se, muito fraco e com cara de fome. Tremendo de medo, 
+                        os três porquinhos correram para dentro de casa.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp O lobo aproximou-se, farejou as paredes de pedra e, com as suas unhas,
+                        tentou cavar um buraco. Mas este, apesar de tentar muito, o muro não cedeu.
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <center><img style="width: 90%" class="img-fluid imagemLivro" src="./img/lobo_tentar_entrar_casa.jpg"></center>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagina-livro-impar">
-          <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-              <div class="row m-3">
-                <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="./img/fim.png">
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(13)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp - Vou apanhar-vos! Vou apanhar-vos, por mais que se escondam! - gritou, furioso.
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp E, ao ver que não conseguia derrubar as paredes nem entrar pela porta da casa, 
+                        decidiu subir ao telhado. 
+                      </p>
+                      <p>
+                        &nbsp&nbsp&nbsp - Entrarei pela chaminé! Ah, ah, ah! - gritou com um ar sorridente.  
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <center><img style="width: 80%" class="img-fluid imagemLivro" src="./img/subir_chamine.jpg"></center>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(14)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp E começou a trepar pela chaminé. Mas quando já quase atingia o topo, escorregou e caiu no chão, 
+                        magoando-se tanto que decidiu fugir dali para sempre.
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('fala_lobo_mau_4')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/lobo_caindo_chamine.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-par">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row mx-4 my-4">
+                    <div onclick="reproduzirTextoPagina(15)" class="zona-texto elementoClicavel">
+                      <p>
+                        &nbsp&nbsp&nbsp Com o desaparecimento do lobo, Mico, Chico e Pico viveram então felizes e descansados para sempre. 
+                      </p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                  <img onclick="reproduzirClicavelPagina('iupi_conseguimos')" style="width:19vw" class="mx-auto d-block elementoClicavel" src="./img/final_feliz.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagina-livro-impar">
+            <div class="row h-100">
+              <div class="col-sm-12 my-auto">
+                <div class="row m-3">
+                  <img onclick="reproduzirFimHistoria()" class="img-fluid elementoClicavel" src="./img/fim.png">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="referencia" class="col-2 text-center">
+        <img class="img-fluid elementoClicavel" src="../../img/seta_direita.png" onclick="avancarPagina()">
+      </div>
     </div>
-    <div id="referencia" class="col-2 text-center">
-      <img class="img-fluid elementoClicavel" src="../../img/seta_direita.png" onclick="avancarPagina()">
+    <div class="row mx-2 mt-3">
+      <div class="col-2"></div>
+      <div id="reprodutor" class="col-8 text-center reprodutor">
+        <div class="row h-100">
+          <div class="col-sm-12 my-auto">
+            <div id="reprodutor2" class="row linhaReprodutor">
+              <div class="col-2 mb-1">
+                <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay elementoClicavel" src="../../img/botaoPlay.png" alt="">
+              </div>
+              <div class="col-10 mb-1">
+                <div id="barra" class="progress barraProgressoExterior">
+                  <div id="barraProgresso" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row mx-2 mt-3">
-    <div class="col-2"></div>
-    <div id="reprodutor" class="col-8 text-center reprodutor">
-      <div class="row h-100">
-        <div class="col-sm-12 my-auto">
-          <div id="reprodutor2" class="row linhaReprodutor">
-            <div class="col-2 mb-1">
-              <img onclick="reproduzirHistoria()" id="botaoPlay" class="img-fluid botaoPlay elementoClicavel" src="../../img/botaoPlay.png" alt="">
-            </div>
-            <div class="col-10 mb-1">
-              <div id="barra" class="progress barraProgressoExterior">
-                <div id="barraProgresso" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2"></div>
-      </div>
+  <div class="naoPermitido h-100">
+    <div class="row align-items-center h-100">
+        <img src="../../img/avisoGirarTelemovel.png" class="img-fluid"></img>
     </div>
   </div>
 </body>
