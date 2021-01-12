@@ -29,3 +29,8 @@ p{
     transform: scale(1.05);
     cursor: pointer;
 }
+
+.elementoClicavel:active{
+    transform: scale(1.05);
+    cursor: pointer;
+}
