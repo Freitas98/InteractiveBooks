@@ -27,3 +27,18 @@
     height: 50%;
 }
 
+@media only screen and (orientation:portrait){
+    .permitido { 
+        display: none; 
+    }
+
+    .naoPermitido { 
+        display: block; 
+    }
+}
+@media only screen and (orientation:landscape){
+    .naoPermitido{
+        display: none; 
+    }
+}
+
