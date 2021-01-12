@@ -8,11 +8,6 @@
     cursor: pointer;
 }
 
-.elementoClicavel:active{
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 .zona-texto{
     background-color: #ff394c9c !important;
     border: 1px solid #ff171785;

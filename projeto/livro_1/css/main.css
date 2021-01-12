@@ -15,11 +15,6 @@
     cursor: pointer;
 }
 
-.elementoClicavel:active{
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 .imagemLivro1{
     border-radius: 20%;
 }
