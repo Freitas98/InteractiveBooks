@@ -34,7 +34,7 @@ p{
     display: none; 
   }
 
-@media (orientation:portrait){
+@media only screen and (orientation:portrait){
     .permitido { 
         display: none; 
     }
@@ -43,7 +43,7 @@ p{
         display: block; 
     }
 }
-@media (orientation:landscape){
+@media only screen and (orientation:landscape){
     .naoPermitido{
         display: none; 
     }
