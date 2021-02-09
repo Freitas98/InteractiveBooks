@@ -52,7 +52,9 @@ function atualizarTamanhoReprodutor(){
     reprodutor2.setAttribute("style", "height: " + $(window).height()*0.10 + "px;")
     barra.setAttribute("style", "height: " + $(window).height()*0.05 + "px;")
     var botao = document.getElementById("botaoPlay");
-    botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
+    var botaoStop = document.getElementById("botaoStop");
+    botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;");
+    botaoStop.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;");
     if (document.getElementById("botao36") != null && document.getElementById("botao710") != null) {
         var botao2 = document.getElementById("botao36");
         botao2.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
