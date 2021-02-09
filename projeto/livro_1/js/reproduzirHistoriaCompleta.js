@@ -1,4 +1,30 @@
+reproduzindo = false;
+reproducaoAtivada = false;
+primeiraVez = true;
+
 async function reproduzirHistoria(){
+    if(reproduzindo){
+        audio.pause();
+        reproduzindo = false;
+        document.getElementById("botaoPlay").src = "../../img/botaoPlay.png";
+    }else{
+        if(primeiraVez){
+            document.getElementById("botaoPlay").src = "../../img/botaoPause.png";
+            lerHistoria();
+            primeiraVez = false;
+            reproduzindo = true;
+            reproducaoAtivada = true;
+        }else{
+            document.getElementById("botaoPlay").src = "../../img/botaoPause.png";
+            audio.play();
+            reproduzindo = true;
+            reproducaoAtivada = true;
+        }
+    }
+    
+}
+
+async function lerHistoria(){
     if(flipbook.turn('page') != 1){
         flipbook.turn('page', 1);
         await delay(3);
@@ -79,6 +105,9 @@ async function reproduzirHistoria(){
                                                                                             audio.onended = async function(){
                                                                                                 await delay(1);
                                                                                                 reproduzirFimHistoria();
+                                                                                                audio.onended = async function(){
+                                                                                                    cancelarReproducao();        
+                                                                                                }
                                                                                             }
                                                                                         }
                                                                                     }
@@ -102,4 +131,14 @@ async function reproduzirHistoria(){
             }
         }
     }
+}
+
+function cancelarReproducao(){
+    if(audio){
+        audio.pause();
+    }
+    reproduzindo = false;
+    primeiraVez = true;
+    reproducaoAtivada = false;
+    document.getElementById("botaoPlay").src = "../../img/botaoPlay.png";
 }

@@ -16,8 +16,17 @@ flipbook.turn({
             audio = new Audio("../../audio/virar-pagina.mp3");
             audio.play();
         },
-        turning: function(event, page, pageObject) {
-            pararAudio();
+        start: function(event, pageObject, corner) {
+            if (corner != null && reproducaoAtivada) {
+              $(this).turn('data').hover = true;
+              return event.preventDefault();
+            }
+        },
+        turning: function(event, page, newView) {
+            if ($(this).turn('data').hover) {
+                $(this).turn('data').hover = false;
+                event.preventDefault();
+            }
         }
     }
 });
@@ -61,7 +70,7 @@ function atualizarTamanhoProgressBar(){
 
 function atualizarTamanhoBotaoSair(){
     var botao = document.getElementById("botaoSair");
-    botao.setAttribute("style", "width: " + $(window).height() * 0.05 + "px;")
+    botao.setAttribute("style", "width: " + $(window).height() * 0.08 + "px;")
 }
 
 function avancarPagina(){
@@ -80,6 +89,22 @@ function atualizarProgressoReprodutor(){
 function voltarPagina(){
     flipbook.turn('previous');
     atualizarProgressoReprodutor();
+}
+
+function setaVoltar(){
+    if(event != null && reproducaoAtivada) {return}
+    if(!reproduzindo){
+        flipbook.turn('previous');
+        atualizarProgressoReprodutor();
+    }
+}
+
+function setaProgredir(){
+    if(event != null && reproducaoAtivada) {return}
+    if(!reproduzindo){
+        flipbook.turn('next');
+        atualizarProgressoReprodutor();
+    }
 }
 
 $(window).on('resize',function() {
