@@ -16,8 +16,17 @@ flipbook.turn({
             audio = new Audio("../../audio/virar-pagina.mp3");
             audio.play();
         },
-        turning: function(event, page, pageObject) {
-            pararAudio();
+        start: function(event, pageObject, corner) {
+            if (corner != null && reproducaoAtivada) {
+              $(this).turn('data').hover = true;
+              return event.preventDefault();
+            }
+        },
+        turning: function(event, page, newView) {
+            if ($(this).turn('data').hover) {
+                $(this).turn('data').hover = false;
+                event.preventDefault();
+            }
         }
     }
 });
@@ -43,7 +52,9 @@ function atualizarTamanhoReprodutor(){
     reprodutor2.setAttribute("style", "height: " + $(window).height()*0.10 + "px;")
     barra.setAttribute("style", "height: " + $(window).height()*0.05 + "px;")
     var botao = document.getElementById("botaoPlay");
-    botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
+    var botaoStop = document.getElementById("botaoStop");
+    botao.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;");
+    botaoStop.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;");
     if (document.getElementById("botao36") != null && document.getElementById("botao710") != null) {
         var botao2 = document.getElementById("botao36");
         botao2.setAttribute("style", "height: " + $(window).height() * 0.08 + "px;")
@@ -61,7 +72,7 @@ function atualizarTamanhoProgressBar(){
 
 function atualizarTamanhoBotaoSair(){
     var botao = document.getElementById("botaoSair");
-    botao.setAttribute("style", "width: " + $(window).height() * 0.05 + "px;")
+    botao.setAttribute("style", "width: " + $(window).height() * 0.08 + "px;")
 }
 
 function avancarPagina(){
@@ -80,6 +91,22 @@ function atualizarProgressoReprodutor(){
 function voltarPagina(){
     flipbook.turn('previous');
     atualizarProgressoReprodutor();
+}
+
+function setaVoltar(){
+    if(event != null && reproducaoAtivada) {return}
+    if(!reproduzindo){
+        flipbook.turn('previous');
+        atualizarProgressoReprodutor();
+    }
+}
+
+function setaProgredir(){
+    if(event != null && reproducaoAtivada) {return}
+    if(!reproduzindo){
+        flipbook.turn('next');
+        atualizarProgressoReprodutor();
+    }
 }
 
 $(window).on('resize',function() {
