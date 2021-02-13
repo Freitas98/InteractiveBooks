@@ -3,9 +3,17 @@
     border: solid 1px black;
 }*/
 
+#divMeio{
+    background: url("../../../img/moldura_os_tres_porquinhos.png"); 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .zona-texto{
     background-color: #198754 !important;
-    border: 1px solid black;
+    border: 1px solid #146e44;
     font-size: 2.0vh;
     border-radius: 0.5rem;
     text-align: justify;

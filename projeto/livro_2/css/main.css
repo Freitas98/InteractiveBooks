@@ -3,6 +3,14 @@
     border: solid 1px black;
 }*/
 
+#divMeio{
+    background: url("../../../img/moldura_capuchinho_vermelho.png"); 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .elementoClicavel:hover{
     transform: scale(1.05);
     cursor: pointer;

@@ -1,11 +1,3 @@
-#divMeio{
-    background: url("../../img/moldura_livro3.png"); 
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .reprodutor{
     background-color: #473beb;
     border: 3px solid black;
